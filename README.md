@@ -57,3 +57,6 @@ And:
 adb shell screenrecord --bit-rate=16m --output-format=h264 --size 800x600 - | ffplay -framerate 60 -framedrop -bufsize 16M 
 ```
 And after a couple of moments you see the mobile screen on your Mac.
+
+Hint:
+You can put the long line in a file places in path.
