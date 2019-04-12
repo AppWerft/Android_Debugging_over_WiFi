@@ -1,5 +1,9 @@
 # Android debugging and screen mirroring over Wifi
 
+
+<img src="https://i.imgur.com/wO1TIO1.jpg" width=400 />
+
+
 Since the new devices has USB-C plugs the connection is very instable. Short interruptions (triggered by looking to device) kills the debug session. This article describes an alternative.
 
 ## Start
@@ -61,6 +65,8 @@ And:
 adb shell screenrecord --bit-rate=16m --output-format=h264 --size 800x600 - | ffplay -framerate 60 -framedrop -bufsize 16M 
 ```
 And after a couple of moments you see the mobile screen on your Mac.
+
+<img src="https://i.imgur.com/A4Qct3D.jpg" width=400 />
 
 Hint:
 You can put the long line in a file places in path.
