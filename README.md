@@ -20,3 +20,20 @@ Now a server is running on devicer. Perhaps you have to repeat this procedure af
 
 ## Connecting
 
+Now we have two cases: you are in an available Wifi infrastructure or not.
+
+### Infrastructur
+
+Both decvice must be in same net. The you open on device the `System configuration/Network manager/Wifi/MY_NET/Advanced` an get the IP number of device. Then on host:
+
+```
+adb connect IP_NUMBER:5555
+adb devices
+```
+
+Et voilà!
+
+### Own net (tethering)
+
+After connecting you host with the tethered net you open the System `Configuration/Network/MY_TETHERED_NET/TCPIP` and get the IP
+<img src="https://i.imgur.com/JxkReY9.png" width=400 />
