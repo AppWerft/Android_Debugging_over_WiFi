@@ -36,4 +36,24 @@ Et voilà!
 ### Own net (tethering)
 
 After connecting you host with the tethered net you open the System `Configuration/Network/MY_TETHERED_NET/TCPIP` and get the IP
+
 <img src="https://i.imgur.com/JxkReY9.png" width=400 />
+
+```
+adb connect 192.168.43.83:5555
+```
+Et voilà!
+
+### Screen mirroring
+
+First install ffmpeg
+
+```
+brew install ffmpeg
+```
+And:
+
+```
+adb shell screenrecord --bit-rate=16m --output-format=h264 --size 800x600 - | ffplay -framerate 60 -framedrop -bufsize 16M 
+```
+And after a couple of moments you see the mobile screen on your Mac.
