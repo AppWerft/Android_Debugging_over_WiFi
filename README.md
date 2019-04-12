@@ -11,7 +11,7 @@ Since the new devices has USB-C plugs the connection is very instable. Short int
 First you have to connect you device with a cable. After enabling of developer mode (7x pressing …) and enabling of USB mode you type on you console on host:
 
 ```
-adb connect tcpip 5555
+adb tcpip 5555
 ```
 
 The system will answer with a success message. If there are issues, then you can test with:
