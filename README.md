@@ -29,6 +29,10 @@ Both decvice must be in same net. The you open on device the `System configurati
 ```
 adb connect IP_NUMBER:5555
 adb devices
+
+Rainers-MBP-3:Hoerdat fuerst$ adb devices
+List of devices attached
+192.168.43.130:5555	device
 ```
 
 Et voilà!
@@ -60,3 +64,6 @@ And after a couple of moments you see the mobile screen on your Mac.
 
 Hint:
 You can put the long line in a file places in path.
+
+### Potential pitfal
+The tethering method offen changes the IP of host.
